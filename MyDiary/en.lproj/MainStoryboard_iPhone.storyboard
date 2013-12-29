@@ -1,21 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MyDailry程序作者介绍" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Df-mt-11i">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="6D5-KL-epn"/>
+                                    <constraint firstAttribute="height" constant="21" id="xWw-YM-zVi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="a6I-jq-mSh">
+                                <segments>
+                                    <segment title="金建雄"/>
+                                    <segment title="半夏"/>
+                                </segments>
+                                <connections>
+                                    <action selector="authorChanged:" destination="2" eventType="valueChanged" id="Keg-Pn-1U3"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="QQ：417562437" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Neo-Ko-utU">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="lAh-dr-chd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="微信号：wxbanxia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhV-j8-kuI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="UA2-Ko-uJ2"/>
+                                    <constraint firstAttribute="height" constant="43" id="iBt-P2-qe7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uP9-GZ-qKu">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="5h8-gA-7mx"/>
+                                    <constraint firstAttribute="width" constant="240" id="r3F-by-jpy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Neo-Ko-utU" firstAttribute="leading" secondItem="mhV-j8-kuI" secondAttribute="leading" type="default" id="0mD-p0-kNm"/>
+                            <constraint firstItem="uP9-GZ-qKu" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="45" id="7R1-Ec-p0b"/>
+                            <constraint firstAttribute="bottom" secondItem="uP9-GZ-qKu" secondAttribute="bottom" constant="26" id="8mP-3l-vZg"/>
+                            <constraint firstItem="3Df-mt-11i" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="FbH-r4-fDa"/>
+                            <constraint firstItem="3Df-mt-11i" firstAttribute="leading" secondItem="Neo-Ko-utU" secondAttribute="leading" type="default" id="Fk5-7J-1Z0"/>
+                            <constraint firstItem="a6I-jq-mSh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="108" id="G37-t3-wKh"/>
+                            <constraint firstItem="mhV-j8-kuI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="252" id="Id7-6d-kxs"/>
+                            <constraint firstItem="3Df-mt-11i" firstAttribute="top" secondItem="3" secondAttribute="top" constant="29" id="M8k-7d-jXM"/>
+                            <constraint firstItem="a6I-jq-mSh" firstAttribute="centerX" secondItem="mhV-j8-kuI" secondAttribute="centerX" type="default" id="bf6-R9-vdw"/>
+                            <constraint firstItem="Neo-Ko-utU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="201" id="daE-fj-wlf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authorImage" destination="uP9-GZ-qKu" id="16l-7h-N3e"/>
+                        <outlet property="authors" destination="a6I-jq-mSh" id="10N-HZ-e51"/>
+                        <outlet property="qqNumber" destination="Neo-Ko-utU" id="V1i-rY-NxC"/>
+                        <outlet property="weixin" destination="mhV-j8-kuI" id="0BV-au-YFf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-81" y="-107"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

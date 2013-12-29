@@ -26,4 +26,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)authorChanged:(id)sender {
+    NSLog(@"我被点击了噎！");
+}
 @end

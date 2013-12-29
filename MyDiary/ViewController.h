@@ -10,4 +10,11 @@
 
 @interface ViewController : UIViewController
 
+
+@property (weak, nonatomic) IBOutlet UILabel *qqNumber;
+@property (weak, nonatomic) IBOutlet UILabel *weixin;
+@property (weak, nonatomic) IBOutlet UIImageView *authorImage;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *authors;
+
+- (IBAction)authorChanged:(id)sender;
 @end
