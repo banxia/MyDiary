@@ -49,23 +49,23 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uP9-GZ-qKu">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="193" id="5h8-gA-7mx"/>
-                                    <constraint firstAttribute="width" constant="240" id="r3F-by-jpy"/>
+                                    <constraint firstAttribute="width" constant="219" id="RVO-80-HKP"/>
+                                    <constraint firstAttribute="height" constant="234" id="YX3-8k-Id1"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Neo-Ko-utU" firstAttribute="leading" secondItem="mhV-j8-kuI" secondAttribute="leading" type="default" id="0mD-p0-kNm"/>
-                            <constraint firstItem="uP9-GZ-qKu" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="45" id="7R1-Ec-p0b"/>
-                            <constraint firstAttribute="bottom" secondItem="uP9-GZ-qKu" secondAttribute="bottom" constant="26" id="8mP-3l-vZg"/>
+                            <constraint firstItem="uP9-GZ-qKu" firstAttribute="trailing" secondItem="3Df-mt-11i" secondAttribute="trailing" type="default" id="1h2-CR-q9H"/>
+                            <constraint firstItem="a6I-jq-mSh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="68" id="7QH-Lh-GEl"/>
+                            <constraint firstAttribute="bottom" secondItem="uP9-GZ-qKu" secondAttribute="bottom" constant="8" id="DjJ-VP-QSI"/>
                             <constraint firstItem="3Df-mt-11i" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="FbH-r4-fDa"/>
                             <constraint firstItem="3Df-mt-11i" firstAttribute="leading" secondItem="Neo-Ko-utU" secondAttribute="leading" type="default" id="Fk5-7J-1Z0"/>
-                            <constraint firstItem="a6I-jq-mSh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="108" id="G37-t3-wKh"/>
-                            <constraint firstItem="mhV-j8-kuI" firstAttribute="top" secondItem="3" secondAttribute="top" constant="252" id="Id7-6d-kxs"/>
                             <constraint firstItem="3Df-mt-11i" firstAttribute="top" secondItem="3" secondAttribute="top" constant="29" id="M8k-7d-jXM"/>
                             <constraint firstItem="a6I-jq-mSh" firstAttribute="centerX" secondItem="mhV-j8-kuI" secondAttribute="centerX" type="default" id="bf6-R9-vdw"/>
-                            <constraint firstItem="Neo-Ko-utU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="201" id="daE-fj-wlf"/>
+                            <constraint firstItem="mhV-j8-kuI" firstAttribute="top" secondItem="Neo-Ko-utU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gDx-UJ-wpg"/>
+                            <constraint firstItem="Neo-Ko-utU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="144" id="jhL-co-CAC"/>
                         </constraints>
                     </view>
                     <connections>
@@ -80,6 +80,21 @@
             <point key="canvasLocation" x="-81" y="-107"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="authorChanged:"/>
+                <relationship kind="outlet" name="authorImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="authors" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="qqNumber" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="weixin" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
