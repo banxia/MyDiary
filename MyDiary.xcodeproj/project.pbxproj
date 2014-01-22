@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3DA4EDE0187009EA0060FE34 /* author1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA4EDDF187009EA0060FE34 /* author1.png */; };
 		3DA4EDE218700AED0060FE34 /* author2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA4EDE118700AED0060FE34 /* author2.png */; };
+		3DB3807F188FFA3E00FCC1C5 /* Diary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3807E188FFA3E00FCC1C5 /* Diary.m */; };
 		3DFF3A21182E285D00F7AA22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF3A20182E285D00F7AA22 /* UIKit.framework */; };
 		3DFF3A23182E285D00F7AA22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF3A22182E285D00F7AA22 /* Foundation.framework */; };
 		3DFF3A25182E285D00F7AA22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF3A24182E285D00F7AA22 /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		3DA4EDDF187009EA0060FE34 /* author1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = author1.png; sourceTree = "<group>"; };
 		3DA4EDE118700AED0060FE34 /* author2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = author2.png; sourceTree = "<group>"; };
+		3DB3807D188FFA3E00FCC1C5 /* Diary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diary.h; sourceTree = "<group>"; };
+		3DB3807E188FFA3E00FCC1C5 /* Diary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diary.m; sourceTree = "<group>"; };
 		3DFF3A1D182E285D00F7AA22 /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFF3A20182E285D00F7AA22 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DFF3A22182E285D00F7AA22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +109,8 @@
 				3DFF3A3E182E285E00F7AA22 /* AboutViewController.h */,
 				3DFF3A3F182E285E00F7AA22 /* AboutViewController.m */,
 				3DFF3A27182E285D00F7AA22 /* Supporting Files */,
+				3DB3807D188FFA3E00FCC1C5 /* Diary.h */,
+				3DB3807E188FFA3E00FCC1C5 /* Diary.m */,
 			);
 			path = MyDiary;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				3DFF3A2D182E285D00F7AA22 /* main.m in Sources */,
 				3DFF3A31182E285D00F7AA22 /* AppDelegate.m in Sources */,
 				3DFF3A40182E285E00F7AA22 /* AboutViewController.m in Sources */,
+				3DB3807F188FFA3E00FCC1C5 /* Diary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

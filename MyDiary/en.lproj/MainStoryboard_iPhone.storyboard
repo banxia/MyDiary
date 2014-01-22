@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--About View Controller - Item-->
+        <!--About View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="AboutViewController" sceneMemberID="viewController">
@@ -68,7 +68,7 @@
                             <constraint firstItem="Neo-Ko-utU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="144" id="jhL-co-CAC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="e0f-Tw-fn6"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="e0f-Tw-fn6"/>
                     <connections>
                         <outlet property="authorImage" destination="uP9-GZ-qKu" id="16l-7h-N3e"/>
                         <outlet property="authors" destination="a6I-jq-mSh" id="10N-HZ-e51"/>
@@ -78,9 +78,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="-233"/>
+            <point key="canvasLocation" x="154" y="-239"/>
         </scene>
-        <!--View Controller - Item 2-->
+        <!--View Controller-->
         <scene sceneID="6XX-NX-Spz">
             <objects>
                 <viewController id="nAM-Jb-gA8" sceneMemberID="viewController">
@@ -89,13 +89,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="fOx-wY-WO9"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="fOx-wY-WO9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlX-xD-S4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="568" y="202"/>
         </scene>
-        <!--View Controller - Item 1-->
+        <!--View Controller-->
         <scene sceneID="Ain-OE-qXf">
             <objects>
                 <viewController id="bWX-ko-fpj" sceneMemberID="viewController">
@@ -104,7 +104,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="qKy-ga-vkR"/>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="qKy-ga-vkR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Rv-yW-6K2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -121,9 +121,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="bWX-ko-fpj" kind="relationship" relationship="viewControllers" id="KPw-QR-oyz"/>
-                        <segue destination="nAM-Jb-gA8" kind="relationship" relationship="viewControllers" id="OYj-V9-8s2"/>
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="L2A-Vw-TkA"/>
+                        <segue destination="bWX-ko-fpj" kind="relationship" relationship="viewControllers" id="n1Z-0v-Q9B"/>
+                        <segue destination="nAM-Jb-gA8" kind="relationship" relationship="viewControllers" id="aMX-wh-RM2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8v-A3-IpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
