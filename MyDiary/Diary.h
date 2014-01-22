@@ -12,6 +12,8 @@
 
 +(id) createDiary;
 
+-(id)initWithTitle:(NSString *)theTitle content:(NSString *) theContent;
+
 @property (nonatomic,strong) NSString *title;
 @property (nonatomic,strong) NSString *content;
 @property (nonatomic,readonly,getter = dateCreate) NSDate *dateCreate;

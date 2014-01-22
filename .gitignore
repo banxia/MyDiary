@@ -5,7 +5,7 @@ build/*
 *.xcworkspace
 xcuserdata
 project.xcworkspace/*
-xcuserdata/*
+*.xcuserdata/*
 
 # osx noise
 .DS_Store
