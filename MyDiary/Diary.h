@@ -10,4 +10,9 @@
 
 @interface Diary : NSObject
 
+@property (nonatomic,retain) NSString *title;
+@property (nonatomic,retain) NSString *content;
+@property (nonatomic,readonly,getter = dateCreate) NSDate *dateCreate;
+
+
 @end
