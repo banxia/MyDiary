@@ -10,4 +10,9 @@
 
 @implementation Diary
 
++(id)createDiary{
+    Diary *newDiary = [[Diary alloc] init];
+    return newDiary;
+}
+
 @end
