@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tfa-uL-qrr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--About View Controller - Item-->
         <scene sceneID="5">
             <objects>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="AboutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MyDailry程序作者介绍" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Df-mt-11i">
@@ -58,16 +58,17 @@
                         <constraints>
                             <constraint firstItem="Neo-Ko-utU" firstAttribute="leading" secondItem="mhV-j8-kuI" secondAttribute="leading" type="default" id="0mD-p0-kNm"/>
                             <constraint firstItem="uP9-GZ-qKu" firstAttribute="trailing" secondItem="3Df-mt-11i" secondAttribute="trailing" type="default" id="1h2-CR-q9H"/>
-                            <constraint firstItem="a6I-jq-mSh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="68" id="7QH-Lh-GEl"/>
                             <constraint firstAttribute="bottom" secondItem="uP9-GZ-qKu" secondAttribute="bottom" constant="8" id="DjJ-VP-QSI"/>
                             <constraint firstItem="3Df-mt-11i" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="FbH-r4-fDa"/>
                             <constraint firstItem="3Df-mt-11i" firstAttribute="leading" secondItem="Neo-Ko-utU" secondAttribute="leading" type="default" id="Fk5-7J-1Z0"/>
                             <constraint firstItem="3Df-mt-11i" firstAttribute="top" secondItem="3" secondAttribute="top" constant="29" id="M8k-7d-jXM"/>
+                            <constraint firstItem="a6I-jq-mSh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="70" id="NRn-EO-HbK"/>
                             <constraint firstItem="a6I-jq-mSh" firstAttribute="centerX" secondItem="mhV-j8-kuI" secondAttribute="centerX" type="default" id="bf6-R9-vdw"/>
                             <constraint firstItem="mhV-j8-kuI" firstAttribute="top" secondItem="Neo-Ko-utU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gDx-UJ-wpg"/>
                             <constraint firstItem="Neo-Ko-utU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="144" id="jhL-co-CAC"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="e0f-Tw-fn6"/>
                     <connections>
                         <outlet property="authorImage" destination="uP9-GZ-qKu" id="16l-7h-N3e"/>
                         <outlet property="authors" destination="a6I-jq-mSh" id="10N-HZ-e51"/>
@@ -77,15 +78,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-81" y="-107"/>
+            <point key="canvasLocation" x="318" y="-233"/>
+        </scene>
+        <!--View Controller - Item 2-->
+        <scene sceneID="6XX-NX-Spz">
+            <objects>
+                <viewController id="nAM-Jb-gA8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KCl-cs-8Vh">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="fOx-wY-WO9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlX-xD-S4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="202"/>
+        </scene>
+        <!--View Controller - Item 1-->
+        <scene sceneID="Ain-OE-qXf">
+            <objects>
+                <viewController id="bWX-ko-fpj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lh0-iX-2pp">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="qKy-ga-vkR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Rv-yW-6K2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="-451"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hpj-1y-t6v">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="tfa-uL-qrr" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="MlY-LH-IaM">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bWX-ko-fpj" kind="relationship" relationship="viewControllers" id="KPw-QR-oyz"/>
+                        <segue destination="nAM-Jb-gA8" kind="relationship" relationship="viewControllers" id="OYj-V9-8s2"/>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="L2A-Vw-TkA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p8v-A3-IpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-193" y="-239"/>
         </scene>
     </scenes>
     <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        <class className="AboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
             <relationships>
                 <relationship kind="action" name="authorChanged:"/>
                 <relationship kind="outlet" name="authorImage" candidateClass="UIImageView"/>
@@ -93,6 +141,9 @@
                 <relationship kind="outlet" name="qqNumber" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="weixin" candidateClass="UILabel"/>
             </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

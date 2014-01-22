@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 jjx. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AboutViewController.h"
 
-@interface ViewController ()
+@interface AboutViewController ()
 
 @end
 
-@implementation ViewController
+@implementation AboutViewController
 
 - (void)viewDidLoad
 {
