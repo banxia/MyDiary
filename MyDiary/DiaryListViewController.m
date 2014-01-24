@@ -124,13 +124,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    NSLog(@"表格视图中第 %d 行被点击",indexPath.row);
+    
+    NSString *messageString = [NSString stringWithFormat:@"表格视图中第 %d 行被点击",indexPath.row];
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"用户点击单元格"
+                                                   message:messageString
+                                                  delegate:nil
+                                         cancelButtonTitle:@"确定"
+                                         otherButtonTitles: nil];
+    [alert show];
 }
 
 @end
