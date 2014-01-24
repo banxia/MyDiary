@@ -7,6 +7,7 @@
 //
 
 #import "DiaryListViewController.h"
+#import "Diary.h"
 
 @interface DiaryListViewController ()
 
@@ -32,6 +33,16 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    Diary *a = [[Diary alloc] initWithTitle:@"第一篇日记" content:@"第一篇日记的内容"];
+    Diary *b = [[Diary alloc] initWithTitle:@"第二篇日记" content:@"第二篇日记的内容"];
+    Diary *c = [[Diary alloc] initWithTitle:@"第三篇日记" content:@"第三篇日记的内容"];
+    Diary *d = [[Diary alloc] initWithTitle:@"第四篇日记" content:@"第四篇日记的内容"];
+    Diary *e = [[Diary alloc] initWithTitle:@"第五篇日记" content:@"第五篇日记的内容"];
+    
+    self.diaries = [[NSMutableArray alloc] initWithObjects:a,b,c,d,e, nil];
+    
+    NSLog(@"Diaries的元素有，%@",self.diaries);
 }
 
 - (void)didReceiveMemoryWarning
