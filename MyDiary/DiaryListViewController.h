@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DiaryListViewController : UITableViewController
+@interface DiaryListViewController : UITableViewController <UITableViewDataSource>
 
 @end
