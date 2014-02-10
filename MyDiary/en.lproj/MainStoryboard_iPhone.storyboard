@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197" y="-755"/>
+            <point key="canvasLocation" x="-237" y="-747"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6XX-NX-Spz">
@@ -120,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Rv-yW-6K2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="875" y="-688"/>
+            <point key="canvasLocation" x="725" y="-414"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q6g-cV-dnZ">
@@ -136,7 +136,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cee-2R-sxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="-688"/>
+            <point key="canvasLocation" x="235" y="-396"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hpj-1y-t6v">
@@ -156,27 +156,9 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8v-A3-IpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-737" y="-524"/>
+            <point key="canvasLocation" x="-709" y="-456"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="AboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="authorChanged:"/>
-                <relationship kind="outlet" name="authorImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="authors" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="qqNumber" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="weixin" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="DiaryListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DiaryListViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

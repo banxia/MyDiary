@@ -12,4 +12,6 @@
 
 @property (nonatomic,strong) NSArray *diaries;
 
+-(id)addNewDiary:(id)sender;
+
 @end

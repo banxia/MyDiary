@@ -43,6 +43,16 @@
     self.diaries = [[NSMutableArray alloc] initWithObjects:a,b,c,d,e, nil];
     
     NSLog(@"Diaries的元素有，%@",self.diaries);
+    
+    UIBarButtonItem *bbi = [[UIBarButtonItem alloc]
+                            initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                target:self
+                                action:@selector(addNewDiary:)];
+    
+    [[self navigationItem] setRightBarButtonItem:bbi];
+    [[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
+    
+    [[self navigationItem] setTitle:@"日记列表"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -134,6 +144,10 @@
                                          cancelButtonTitle:@"确定"
                                          otherButtonTitles: nil];
     [alert show];
+}
+
+-(id)addNewDiary:(id)sender
+{
 }
 
 @end
