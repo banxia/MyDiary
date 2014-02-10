@@ -134,6 +134,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    /*
     NSLog(@"表格视图中第 %d 行被点击",indexPath.row);
     
     NSString *messageString = [NSString stringWithFormat:@"表格视图中第 %d 行被点击",indexPath.row];
@@ -144,10 +145,17 @@
                                          cancelButtonTitle:@"确定"
                                          otherButtonTitles: nil];
     [alert show];
+     */
+    
 }
 
 -(id)addNewDiary:(id)sender
 {
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog(@"aaaaaa");
 }
 
 @end

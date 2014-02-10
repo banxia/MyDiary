@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-237" y="-747"/>
+            <point key="canvasLocation" x="-697" y="-795"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6XX-NX-Spz">
@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nlX-xD-S4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-190" y="-34"/>
+            <point key="canvasLocation" x="-686" y="-38"/>
         </scene>
         <!--Diary List View Controller-->
         <scene sceneID="Ain-OE-qXf">
@@ -112,6 +112,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="WGC-7P-Iif" kind="push" id="riW-cV-w13"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -120,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Rv-yW-6K2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="725" y="-414"/>
+            <point key="canvasLocation" x="101" y="-729"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q6g-cV-dnZ">
@@ -136,7 +139,53 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cee-2R-sxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="235" y="-396"/>
+            <point key="canvasLocation" x="-295" y="-736"/>
+        </scene>
+        <!--Detail Diary View Controller-->
+        <scene sceneID="ZeB-Ec-cYx">
+            <objects>
+                <viewController id="WGC-7P-Iif" customClass="DetailDiaryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qFd-AE-2xu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="diaryTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zL6-fF-Mgf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="GBG-9h-F3K"/>
+                                    <constraint firstAttribute="height" constant="39" id="fJL-jg-Jyj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sy0-mS-NW5">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Efn-On-EHR"/>
+                                    <constraint firstAttribute="height" constant="128" id="NiK-EA-Dnr"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Sy0-mS-NW5" firstAttribute="centerX" secondItem="zL6-fF-Mgf" secondAttribute="centerX" type="default" id="GXO-Cb-ax0"/>
+                            <constraint firstItem="Sy0-mS-NW5" firstAttribute="top" secondItem="zL6-fF-Mgf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ubb-V3-v72"/>
+                            <constraint firstItem="zL6-fF-Mgf" firstAttribute="top" secondItem="qFd-AE-2xu" secondAttribute="top" constant="27" id="ryC-i8-vVt"/>
+                            <constraint firstItem="Sy0-mS-NW5" firstAttribute="leading" secondItem="qFd-AE-2xu" secondAttribute="leading" constant="31" id="zDk-up-TdS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="G2d-pP-UZv"/>
+                    <connections>
+                        <outlet property="diaryContent" destination="Sy0-mS-NW5" id="pSg-ck-3pv"/>
+                        <outlet property="diaryTitle" destination="zL6-fF-Mgf" id="bLf-w2-Elg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRB-fo-QBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="-729"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hpj-1y-t6v">
@@ -156,7 +205,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p8v-A3-IpG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-709" y="-456"/>
+            <point key="canvasLocation" x="-1209" y="-414"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
