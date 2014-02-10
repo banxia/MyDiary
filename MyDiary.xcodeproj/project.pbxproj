@@ -11,6 +11,7 @@
 		3DA4EDE218700AED0060FE34 /* author2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA4EDE118700AED0060FE34 /* author2.png */; };
 		3DB3807F188FFA3E00FCC1C5 /* Diary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3807E188FFA3E00FCC1C5 /* Diary.m */; };
 		3DB380B4189201A500FCC1C5 /* DiaryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB380B3189201A500FCC1C5 /* DiaryListViewController.m */; };
+		3DB380B718A8C95700FCC1C5 /* DetailDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB380B618A8C95600FCC1C5 /* DetailDiaryViewController.m */; };
 		3DFF3A21182E285D00F7AA22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF3A20182E285D00F7AA22 /* UIKit.framework */; };
 		3DFF3A23182E285D00F7AA22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF3A22182E285D00F7AA22 /* Foundation.framework */; };
 		3DFF3A25182E285D00F7AA22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFF3A24182E285D00F7AA22 /* CoreGraphics.framework */; };
@@ -32,6 +33,8 @@
 		3DB3807E188FFA3E00FCC1C5 /* Diary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diary.m; sourceTree = "<group>"; };
 		3DB380B2189201A500FCC1C5 /* DiaryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryListViewController.h; sourceTree = "<group>"; };
 		3DB380B3189201A500FCC1C5 /* DiaryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryListViewController.m; sourceTree = "<group>"; };
+		3DB380B518A8C95600FCC1C5 /* DetailDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailDiaryViewController.h; sourceTree = "<group>"; };
+		3DB380B618A8C95600FCC1C5 /* DetailDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailDiaryViewController.m; sourceTree = "<group>"; };
 		3DFF3A1D182E285D00F7AA22 /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFF3A20182E285D00F7AA22 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DFF3A22182E285D00F7AA22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -116,6 +119,8 @@
 				3DB3807E188FFA3E00FCC1C5 /* Diary.m */,
 				3DB380B2189201A500FCC1C5 /* DiaryListViewController.h */,
 				3DB380B3189201A500FCC1C5 /* DiaryListViewController.m */,
+				3DB380B518A8C95600FCC1C5 /* DetailDiaryViewController.h */,
+				3DB380B618A8C95600FCC1C5 /* DetailDiaryViewController.m */,
 			);
 			path = MyDiary;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				3DFF3A40182E285E00F7AA22 /* AboutViewController.m in Sources */,
 				3DB3807F188FFA3E00FCC1C5 /* Diary.m in Sources */,
 				3DB380B4189201A500FCC1C5 /* DiaryListViewController.m in Sources */,
+				3DB380B718A8C95700FCC1C5 /* DetailDiaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
