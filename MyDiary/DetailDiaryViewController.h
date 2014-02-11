@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Diary.h"
+
 
 @interface DetailDiaryViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *diaryTitle;
 @property (weak, nonatomic) IBOutlet UITextView *diaryContent;
+@property (weak, nonatomic) Diary *diary;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Diary.h"
+#import "DetailDiaryViewController.h"
 
 @interface DiaryListViewController : UITableViewController <UITableViewDataSource>
 

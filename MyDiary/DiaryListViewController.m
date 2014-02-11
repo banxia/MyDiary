@@ -155,7 +155,18 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"aaaaaa");
+    NSLog(@"故事板中场景切换时执行的方法！");
+    // 获取表格中被选择的行
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSInteger row = [indexPath row];
+    
+    //获取数组中选中的Diary对象
+    Diary *diary = [self.diaries objectAtIndex:row];
+    
+    //通过segue获取被故事板初始化的对象，然后将数据传给它
+    DetailDiaryViewController *detailDiaryViewController =
+        (DetailDiaryViewController *) [segue destinationViewController];
+    detailDiaryViewController.diary = diary;
 }
 
 @end
