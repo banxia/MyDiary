@@ -49,7 +49,7 @@
                                 target:self
                                 action:@selector(addNewDiary:)];
     
-    [[self navigationItem] setRightBarButtonItem:bbi];
+//    [[self navigationItem] setRightBarButtonItem:bbi];
     [[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
     
     [[self navigationItem] setTitle:@"日记列表"];
