@@ -8,6 +8,7 @@
 
 #import "DiaryListViewController.h"
 #import "Diary.h"
+#import "CreateDiaryViewController.h"
 
 @interface DiaryListViewController ()
 
@@ -43,11 +44,11 @@
     self.diaries = [[NSMutableArray alloc] initWithObjects:a,b,c,d,e, nil];
     
     NSLog(@"Diaries的元素有，%@",self.diaries);
-    
-    UIBarButtonItem *bbi = [[UIBarButtonItem alloc]
-                            initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-                                target:self
-                                action:@selector(addNewDiary:)];
+//    
+//    UIBarButtonItem *bbi = [[UIBarButtonItem alloc]
+//                            initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+//                                target:self
+//                                action:@selector(addNewDiary:)];
     
 //    [[self navigationItem] setRightBarButtonItem:bbi];
     [[self navigationItem] setLeftBarButtonItem:[self editButtonItem]];
@@ -149,24 +150,32 @@
     
 }
 
--(id)addNewDiary:(id)sender
-{
-}
+//-(id)addNewDiary:(id)sender
+//{
+//}
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSLog(@"故事板中场景切换时执行的方法！");
-    // 获取表格中被选择的行
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    NSInteger row = [indexPath row];
     
-    //获取数组中选中的Diary对象
-    Diary *diary = [self.diaries objectAtIndex:row];
+    if ([segue.identifier isEqualToString:@"AddDiary" ]) {
+        NSLog(@"进入到创建新日记的场景！");
+    }
     
-    //通过segue获取被故事板初始化的对象，然后将数据传给它
-    DetailDiaryViewController *detailDiaryViewController =
+    if ([segue.identifier isEqualToString:@"DetailDiary" ]) {
+        // 获取表格中被选择的行
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSInteger row = [indexPath row];
+        
+        //获取数组中选中的Diary对象
+        Diary *diary = [self.diaries objectAtIndex:row];
+        
+        //通过segue获取被故事板初始化的对象，然后将数据传给它
+        DetailDiaryViewController *detailDiaryViewController =
         (DetailDiaryViewController *) [segue destinationViewController];
-    detailDiaryViewController.diary = diary;
+        detailDiaryViewController.diary = diary;
+    }
+    
 }
 
 @end

@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface CreateDiaryViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *diaryDate;
+@property (weak, nonatomic) IBOutlet UITextField *diaryTitle;
+@property (weak, nonatomic) IBOutlet UITextView *diaryContent;
+
+- (IBAction)cancel:(id)sender;
+- (IBAction)saveDiary:(id)sender;
 
 @end

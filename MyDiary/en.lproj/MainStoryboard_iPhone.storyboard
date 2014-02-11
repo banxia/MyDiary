@@ -113,7 +113,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="WGC-7P-Iif" kind="push" id="riW-cV-w13"/>
+                                    <segue destination="WGC-7P-Iif" kind="push" identifier="DetailDiary" id="riW-cV-w13"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -122,14 +122,14 @@
                     <navigationItem key="navigationItem" id="Lxz-gk-kJO">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="BA2-ON-83w">
                             <connections>
-                                <segue destination="68X-A6-6O6" kind="modal" id="7RO-SI-R5x"/>
+                                <segue destination="68X-A6-6O6" kind="modal" identifier="AddDiary" modalTransitionStyle="crossDissolve" id="7RO-SI-R5x"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Rv-yW-6K2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-679" y="-622"/>
+            <point key="canvasLocation" x="-692" y="-622"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q6g-cV-dnZ">
@@ -157,12 +157,20 @@
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHT-Wp-hlK">
                                 <items>
-                                    <barButtonItem title="返回" id="XPl-7c-X97"/>
+                                    <barButtonItem title="返回" id="XPl-7c-X97">
+                                        <connections>
+                                            <action selector="cancel:" destination="68X-A6-6O6" id="bf9-NP-ARx"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ecf-O8-aya"/>
                                     <barButtonItem systemItem="camera" id="P0R-8T-9oN"/>
                                     <barButtonItem title="录音" id="25q-Gf-fbC"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="9XS-It-QON"/>
-                                    <barButtonItem title="保存" id="Wpg-FP-kZp"/>
+                                    <barButtonItem title="保存" id="Wpg-FP-kZp">
+                                        <connections>
+                                            <action selector="saveDiary:" destination="68X-A6-6O6" id="VRD-PS-xg1"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="日期和时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hX-vI-Xlx">
@@ -199,10 +207,15 @@
                             <constraint firstAttribute="trailing" secondItem="F0a-Ur-WMa" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="nmK-1Q-yFC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="diaryContent" destination="Sff-UK-wWX" id="3l2-Tp-jTI"/>
+                        <outlet property="diaryDate" destination="5hX-vI-Xlx" id="JFF-Wg-4oT"/>
+                        <outlet property="diaryTitle" destination="F0a-Ur-WMa" id="G2F-tB-t23"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKd-B9-J0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-119" y="-488"/>
+            <point key="canvasLocation" x="-189" y="-483"/>
         </scene>
         <!--Detail Diary View Controller-->
         <scene sceneID="ZeB-Ec-cYx">
@@ -284,6 +297,13 @@
         </class>
         <class className="CreateDiaryViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CreateDiaryViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="saveDiary:"/>
+                <relationship kind="outlet" name="diaryContent" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="diaryDate" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="diaryTitle" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="DetailDiaryViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailDiaryViewController.h"/>
