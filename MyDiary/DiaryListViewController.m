@@ -160,6 +160,9 @@
     
     if ([segue.identifier isEqualToString:@"AddDiary" ]) {
         NSLog(@"进入到创建新日记的场景！");
+        CreateDiaryViewController *createDiaryViewController =
+            (CreateDiaryViewController *) [segue destinationViewController];
+        createDiaryViewController.delegate = self;
     }
     
     if ([segue.identifier isEqualToString:@"DetailDiary" ]) {
@@ -176,6 +179,13 @@
         detailDiaryViewController.diary = diary;
     }
     
+}
+
+
+-(void) CreateDiaryViewControllerDidCancel:(CreateDiaryViewController *)createDiaryViewController
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"委托注销方法！");
 }
 
 @end

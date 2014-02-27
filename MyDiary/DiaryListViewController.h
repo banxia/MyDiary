@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Diary.h"
 #import "DetailDiaryViewController.h"
+#import "CreateDiaryViewController.h"
 
-@interface DiaryListViewController : UITableViewController <UITableViewDataSource>
+@interface DiaryListViewController : UITableViewController <UITableViewDataSource,CreateDiaryViewControllerDelegate>
 
 @property (nonatomic,strong) NSArray *diaries;
 

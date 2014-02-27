@@ -27,6 +27,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"yyyy年M月d h:m:s a"];
+    NSString *date = [df stringFromDate: [NSDate date]];
+    self.diaryDate.text = date;
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,7 +40,7 @@
 }
 
 - (IBAction)cancel:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.delegate CreateDiaryViewControllerDidCancel:self];
 }
 
 - (IBAction)saveDiary:(id)sender {
