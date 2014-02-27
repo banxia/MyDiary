@@ -13,7 +13,7 @@
 
 @interface DiaryListViewController : UITableViewController <UITableViewDataSource,CreateDiaryViewControllerDelegate>
 
-@property (nonatomic,strong) NSArray *diaries;
+@property (nonatomic,strong) NSMutableArray *diaries;
 
 -(id)addNewDiary:(id)sender;
 

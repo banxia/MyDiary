@@ -31,6 +31,8 @@
     [df setDateFormat:@"yyyy年M月d h:m:s a"];
     NSString *date = [df stringFromDate: [NSDate date]];
     self.diaryDate.text = date;
+    
+    self.diary = [[Diary alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,5 +46,14 @@
 }
 
 - (IBAction)saveDiary:(id)sender {
+    self.diary.title = self.diaryTitle.text;
+    self.diary.content = self.diaryContent.text;
+    [self.delegate CreateDiaryViewController:self didSaveWithDiary:self.diary];
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 @end

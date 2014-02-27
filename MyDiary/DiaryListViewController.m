@@ -187,5 +187,11 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     NSLog(@"委托注销方法！");
 }
-
+-(void)CreateDiaryViewController:(CreateDiaryViewController *)createDiaryViewController didSaveWithDiary:(Diary *)theDiary
+{
+    NSLog(@"title:%@, content:%@",theDiary.title,theDiary.content);
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.diaries addObject:theDiary];
+    [self.tableView reloadData];
+}
 @end
